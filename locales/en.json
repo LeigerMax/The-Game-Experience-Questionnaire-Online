@@ -1,0 +1,272 @@
+{
+  "language": "en",
+  "languageName": "English",
+  "ui": {
+    "title": "Game Experience Questionnaire",
+    "postGameSubtitle": "Post-game Module",
+    "coreSubtitle": "Core Module",
+    "inGameSubtitle": "In-Game Module",
+    "socialPresenceSubtitle": "Social Presence Module",
+    "instructions": {
+      "postGame": "Please indicate how you felt after you finished playing the game for each of the following items:",
+      "core": "Please indicate your level of agreement with each of the following statements about your gaming experience:",
+      "inGame": "Please indicate how you felt while playing the game for each of the following items:",
+      "socialPresence": "Please indicate your level of agreement with each of the following statements about your interaction with other players:"
+    },
+    "scaleDescription": {
+      "0": "Not at all",
+      "1": "Slightly",
+      "2": "Moderately",
+      "3": "Fairly",
+      "4": "Extremely"
+    },
+    "scaleLabels": [
+      { "value": 0, "label": "Not at all" },
+      { "value": 1, "label": "Slightly" },
+      { "value": 2, "label": "Moderately" },
+      { "value": 3, "label": "Fairly" },
+      { "value": 4, "label": "Extremely" }
+    ],
+    "scores": "Scores",
+    "averageOn": "Average on 4.0",
+    "progress": "Questionnaire progress",
+    "questionsAnswered": "questions answered",
+    "resetButton": "🔄 Reset questionnaire",
+    "exportButton": "📊 Export results",
+    "completeFirst": "📊 Complete questionnaire",
+    "moduleSwitch": "Module:",
+    "languageSwitch": "Language:",
+    "aboutButton": "ℹ️ About",
+    "backButton": "← Back to questionnaire",
+    "confirmReset": "Are you sure you want to reset the questionnaire? All answers will be lost.",
+    "exportSummary": {
+      "interpretation": "The higher the score, the more intense the experience in that dimension was.",
+      "fileExported": "Detailed results have been exported to a JSON file."
+    },
+    "about": {
+      "title": "About the Game Experience Questionnaire",
+      "description": "The Game Experience Questionnaire (GEQ) is a standardized questionnaire developed to measure players' gaming experience across several important psychological dimensions.",
+      "purpose": "This questionnaire evaluates different aspects of the gaming experience such as immersion, flow, positive and negative affect, tension, challenge, and many others. It allows researchers and game designers to better understand how players experience and feel about their gaming sessions.",
+      "modules": {
+        "title": "Available modules",
+        "postGame": "**Post-game Module**: Evaluates feelings and emotions experienced after finishing playing.",
+        "core": "**Core Module**: Measures the overall gaming experience through 7 key dimensions.",
+        "inGame": "**In-Game Module**: Captures sensations felt during gaming activity.",
+        "socialPresence": "**Social Presence Module**: Analyzes interactions and feelings related to other players."
+      },
+      "research": {
+        "title": "Research utility",
+        "content": "The GEQ is widely used in academic and industrial research to objectively evaluate user experience in video games. It allows correlating players' subjective experience with physiological measures (heart rate, brain activity) or behavioral measures (play time, performance), thus providing a more comprehensive understanding of engagement and gaming enjoyment."
+      },
+      "source": {
+        "title": "Official source",
+        "text": "This questionnaire was developed by Eindhoven University of Technology. You can consult the official documentation:",
+        "link": "Game Experience Questionnaire - Official Documentation (PDF)"
+      },
+      "implementation": {
+        "title": "This implementation",
+        "text": "This online version of the GEQ offers a bilingual interface (French/English) with automatic score calculation and results export. The source code is available on GitHub:",
+        "link": "View project on GitHub"
+      }
+    }
+  },
+  "modules": {
+    "postGame": {
+      "name": "Post-game",
+      "description": "Post-game Module (17 items)",
+      "questions": [
+        "I felt revived",
+        "I felt bad",
+        "I found it hard to get back to reality",
+        "I felt guilty",
+        "It felt like a victory",
+        "I found it a waste of time",
+        "I felt energised",
+        "I felt satisfied",
+        "I felt disoriented",
+        "I felt exhausted",
+        "I felt that I could have done more useful things",
+        "I felt powerful",
+        "I felt weary",
+        "I felt regret",
+        "I felt ashamed",
+        "I felt proud",
+        "I had a sense that I had returned from a journey"
+      ],
+      "dimensions": {
+        "positive": {
+          "name": "Positive Experience",
+          "items": [0, 4, 6, 7, 11, 15]
+        },
+        "negative": {
+          "name": "Negative Experience",
+          "items": [1, 3, 5, 10, 13, 14]
+        },
+        "tiredness": {
+          "name": "Tiredness",
+          "items": [9, 12]
+        },
+        "reality": {
+          "name": "Returning to Reality",
+          "items": [2, 8, 16]
+        }
+      }
+    },
+    "core": {
+      "name": "Core",
+      "description": "Core Module (33 items)",
+      "questions": [
+        "I felt content",
+        "I felt skilful",
+        "I was interested in the game's story",
+        "I thought it was fun",
+        "I was fully occupied with the game",
+        "I felt happy",
+        "It gave me a bad mood",
+        "I thought about other things",
+        "I found it tiresome",
+        "I felt competent",
+        "I thought it was hard",
+        "It was aesthetically pleasing",
+        "I forgot everything around me",
+        "I felt good",
+        "I was good at it",
+        "I felt bored",
+        "I felt successful",
+        "I felt imaginative",
+        "I felt that I could explore things",
+        "I enjoyed it",
+        "I was fast at reaching the game's targets",
+        "I felt annoyed",
+        "I felt pressured",
+        "I felt irritable",
+        "I lost track of time",
+        "I felt challenged",
+        "I found it impressive",
+        "I was deeply concentrated in the game",
+        "I felt frustrated",
+        "It felt like a rich experience",
+        "I lost connection with the outside world",
+        "I felt time pressure",
+        "I had to put a lot of effort into it"
+      ],
+      "dimensions": {
+        "competence": {
+          "name": "Competence",
+          "items": [1, 9, 14, 16, 20]
+        },
+        "immersion": {
+          "name": "Sensory and Imaginative Immersion",
+          "items": [2, 11, 17, 18, 26, 29]
+        },
+        "flow": {
+          "name": "Flow",
+          "items": [4, 12, 24, 27, 30]
+        },
+        "tension": {
+          "name": "Tension / Annoyance",
+          "items": [21, 23, 28]
+        },
+        "challenge": {
+          "name": "Challenge",
+          "items": [10, 22, 25, 31, 32]
+        },
+        "negativeAffect": {
+          "name": "Negative Affect",
+          "items": [6, 7, 8, 15]
+        },
+        "positiveAffect": {
+          "name": "Positive Affect",
+          "items": [0, 3, 5, 13, 19]
+        }
+      }
+    },
+    "inGame": {
+      "name": "In-Game",
+      "description": "In-Game Module (14 items)",
+      "questions": [
+        "I was interested in the game's story",
+        "I felt successful",
+        "I felt bored",
+        "I found it impressive",
+        "I forgot everything around me",
+        "I felt frustrated",
+        "I found it tiresome",
+        "I felt irritable",
+        "I felt skilful",
+        "I felt completely absorbed",
+        "I felt content",
+        "I felt challenged",
+        "I had to put a lot of effort into it",
+        "I felt good"
+      ],
+      "dimensions": {
+        "competence": {
+          "name": "Competence",
+          "items": [1, 8]
+        },
+        "sensoryImmersion": {
+          "name": "Sensory and Imaginative Immersion",
+          "items": [0, 3]
+        },
+        "flow": {
+          "name": "Flow",
+          "items": [4, 9]
+        },
+        "tension": {
+          "name": "Tension",
+          "items": [5, 7]
+        },
+        "challenge": {
+          "name": "Challenge",
+          "items": [11, 12]
+        },
+        "negativeAffect": {
+          "name": "Negative Affect",
+          "items": [2, 6]
+        },
+        "positiveAffect": {
+          "name": "Positive Affect",
+          "items": [10, 13]
+        }
+      }
+    },
+    "socialPresence": {
+      "name": "Social Presence",
+      "description": "Social Presence Module (17 items)",
+      "questions": [
+        "I empathized with the other(s)",
+        "My actions depended on the other(s) actions",
+        "The other's actions were dependent on my actions",
+        "I felt connected to the other(s)",
+        "The other(s) paid close attention to me",
+        "I paid close attention to the other(s)",
+        "I felt jealous about the other(s)",
+        "I found it enjoyable to be with the other(s)",
+        "When I was happy, the other(s) was(were) happy",
+        "When the other(s) was(were) happy, I was happy",
+        "I influenced the mood of the other(s)",
+        "I was influenced by the other(s) moods",
+        "I admired the other(s)",
+        "What the other(s) did affected what I did",
+        "What I did affected what the other(s) did",
+        "I felt revengeful",
+        "I felt schadenfreude (malicious delight)"
+      ],
+      "dimensions": {
+        "psychologicalEmpathy": {
+          "name": "Psychological Involvement - Empathy",
+          "items": [0, 3, 7, 8, 9, 12]
+        },
+        "psychologicalNegative": {
+          "name": "Psychological Involvement - Negative Feelings",
+          "items": [6, 10, 11, 15, 16]
+        },
+        "behavioralInvolvement": {
+          "name": "Behavioral Involvement",
+          "items": [1, 2, 4, 5, 13, 14]
+        }
+      }
+    }
+  }
+}

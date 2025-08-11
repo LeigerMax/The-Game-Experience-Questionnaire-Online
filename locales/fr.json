@@ -1,0 +1,272 @@
+{
+  "language": "fr",
+  "languageName": "Français",
+  "ui": {
+    "title": "Game Experience Questionnaire",
+    "postGameSubtitle": "Module Post-Jeu",
+    "coreSubtitle": "Module Principal",
+    "inGameSubtitle": "Module En-Jeu",
+    "socialPresenceSubtitle": "Module Présence Sociale",
+    "instructions": {
+      "postGame": "Veuillez indiquer comment vous vous êtes senti après avoir terminé de jouer au jeu pour chacun des éléments suivants :",
+      "core": "Veuillez indiquer votre niveau d'accord avec chacune des affirmations suivantes concernant votre expérience de jeu :",
+      "inGame": "Veuillez indiquer comment vous vous sentiez pendant que vous jouiez au jeu pour chacun des éléments suivants :",
+      "socialPresence": "Veuillez indiquer votre niveau d'accord avec chacune des affirmations suivantes concernant votre interaction avec les autres joueurs :"
+    },
+    "scaleDescription": {
+      "0": "Pas du tout d'accord",
+      "1": "Peu d'accord",
+      "2": "Neutre",
+      "3": "Plutôt d'accord",
+      "4": "Tout à fait d'accord"
+    },
+    "scaleLabels": [
+      { "value": 0, "label": "Pas du tout" },
+      { "value": 1, "label": "Peu" },
+      { "value": 2, "label": "Neutre" },
+      { "value": 3, "label": "Plutôt" },
+      { "value": 4, "label": "Tout à fait" }
+    ],
+    "scores": "Scores",
+    "averageOn": "Moyenne sur 4.0",
+    "progress": "Progression du questionnaire",
+    "questionsAnswered": "questions répondues",
+    "resetButton": "🔄 Réinitialiser le questionnaire",
+    "exportButton": "📊 Exporter les résultats",
+    "completeFirst": "📊 Complétez le questionnaire",
+    "moduleSwitch": "Module :",
+    "languageSwitch": "Langue :",
+    "aboutButton": "ℹ️ À propos",
+    "backButton": "← Retour au questionnaire",
+    "confirmReset": "Êtes-vous sûr de vouloir réinitialiser le questionnaire ? Toutes les réponses seront perdues.",
+    "exportSummary": {
+      "interpretation": "Plus le score est élevé, plus l'expérience dans cette dimension était intense.",
+      "fileExported": "Les résultats détaillés ont été exportés en fichier JSON."
+    },
+    "about": {
+      "title": "À propos du Game Experience Questionnaire",
+      "description": "Le Game Experience Questionnaire (GEQ) est un questionnaire standardisé développé pour mesurer l'expérience de jeu des joueurs à travers plusieurs dimensions psychologiques importantes.",
+      "purpose": "Ce questionnaire évalue différents aspects de l'expérience de jeu tels que l'immersion, le flow, l'affect positif et négatif, la tension, le challenge, et bien d'autres. Il permet aux chercheurs et concepteurs de jeux de mieux comprendre comment les joueurs vivent et ressentent leur expérience de jeu.",
+      "modules": {
+        "title": "Les modules disponibles",
+        "postGame": "**Module Post-Jeu** : Évalue les sentiments et émotions ressentis après avoir terminé de jouer.",
+        "core": "**Module Principal** : Mesure l'expérience de jeu générale à travers 7 dimensions clés.",
+        "inGame": "**Module En-Jeu** : Capture les sensations ressenties pendant l'activité de jeu.",
+        "socialPresence": "**Module Présence Sociale** : Analyse les interactions et sentiments liés aux autres joueurs."
+      },
+      "research": {
+        "title": "Utilité en recherche",
+        "content": "Le GEQ est largement utilisé dans la recherche académique et industrielle pour évaluer objectivement l'expérience utilisateur dans les jeux vidéo. Il permet de corréler l'expérience subjective des joueurs avec des mesures physiologiques (rythme cardiaque, activité cérébrale) ou comportementales (temps de jeu, performance), offrant ainsi une compréhension plus complète de l'engagement et du plaisir de jeu."
+      },
+      "source": {
+        "title": "Source officielle",
+        "text": "Ce questionnaire a été développé par l'Université de technologie d'Eindhoven. Vous pouvez consulter la documentation officielle :",
+        "link": "Game Experience Questionnaire - Documentation officielle (PDF)"
+      },
+      "implementation": {
+        "title": "Cette implémentation",
+        "text": "Cette version en ligne du GEQ offre une interface bilingue (français/anglais) avec calcul automatique des scores et export des résultats. Le code source est disponible sur GitHub :",
+        "link": "Voir le projet sur GitHub"
+      }
+    }
+  },
+  "modules": {
+    "postGame": {
+      "name": "Post-game",
+      "description": "Module Post-Jeu (17 items)",
+      "questions": [
+        "Je me suis senti plein d'énergie",
+        "Je me suis senti mal",
+        "J'ai eu du mal à revenir à la réalité",
+        "Je me suis senti coupable",
+        "J'ai eu l'impression d'avoir gagné",
+        "J'ai trouvé que c'était une perte de temps",
+        "Je me suis senti en forme",
+        "J'étais satisfait de ma partie",
+        "Je me suis senti un peu perdu",
+        "Je me suis senti fatigué",
+        "J'ai eu l'impression que j'aurais pu faire quelque chose de plus utile",
+        "Je me suis senti fort",
+        "Je me suis senti épuisé",
+        "J'ai eu des regrets",
+        "J'avais un peu honte",
+        "J'étais fier de moi",
+        "J'ai eu l'impression de revenir d'un voyage"
+      ],
+      "dimensions": {
+        "positive": {
+          "name": "Expérience Positive",
+          "items": [0, 4, 6, 7, 11, 15]
+        },
+        "negative": {
+          "name": "Expérience Négative",
+          "items": [1, 3, 5, 10, 13, 14]
+        },
+        "tiredness": {
+          "name": "Fatigue",
+          "items": [9, 12]
+        },
+        "reality": {
+          "name": "Retour à la Réalité",
+          "items": [2, 8, 16]
+        }
+      }
+    },
+    "core": {
+      "name": "Core",
+      "description": "Module Principal (33 items)",
+      "questions": [
+        "Je me suis senti satisfait",
+        "Je me suis senti habile",
+        "L'histoire du jeu m'a intéressé",
+        "J'ai trouvé cela amusant",
+        "J'étais complètement absorbé par le jeu",
+        "Je me suis senti heureux",
+        "Cela m'a mis de mauvaise humeur",
+        "J'ai pensé à autre chose",
+        "J'ai trouvé cela ennuyeux",
+        "Je me suis senti compétent",
+        "J'ai trouvé cela difficile",
+        "C'était esthétiquement plaisant",
+        "J'ai oublié tout ce qui m'entourait",
+        "Je me suis senti bien",
+        "J'étais bon à ce jeu",
+        "Je me suis ennuyé",
+        "Je me suis senti performant",
+        "Je me suis senti créatif",
+        "J'ai eu l'impression de pouvoir explorer",
+        "J'ai pris du plaisir",
+        "J'ai rapidement atteint les objectifs",
+        "Je me suis senti agacé",
+        "Je me suis senti sous pression",
+        "Je me suis senti irritable",
+        "J'ai perdu la notion du temps",
+        "Je me suis senti défié",
+        "J'ai trouvé cela impressionnant",
+        "J'étais profondément concentré",
+        "Je me suis senti frustré",
+        "C'était une expérience riche",
+        "J'ai perdu le contact avec le monde extérieur",
+        "J'ai ressenti une pression temporelle",
+        "J'ai dû fournir beaucoup d'efforts"
+      ],
+      "dimensions": {
+        "competence": {
+          "name": "Compétence",
+          "items": [1, 9, 14, 16, 20]
+        },
+        "immersion": {
+          "name": "Immersion sensorielle et imaginative",
+          "items": [2, 11, 17, 18, 26, 29]
+        },
+        "flow": {
+          "name": "Flow",
+          "items": [4, 12, 24, 27, 30]
+        },
+        "tension": {
+          "name": "Tension / Agacement",
+          "items": [21, 23, 28]
+        },
+        "challenge": {
+          "name": "Challenge",
+          "items": [10, 22, 25, 31, 32]
+        },
+        "negativeAffect": {
+          "name": "Affect négatif",
+          "items": [6, 7, 8, 15]
+        },
+        "positiveAffect": {
+          "name": "Affect positif",
+          "items": [0, 3, 5, 13, 19]
+        }
+      }
+    },
+    "inGame": {
+      "name": "In-Game",
+      "description": "Module En-Jeu (14 items)",
+      "questions": [
+        "L'histoire du jeu m'a intéressé",
+        "Je me suis senti en réussite",
+        "Je me suis senti ennuyé",
+        "J'ai trouvé cela impressionnant",
+        "J'ai oublié tout ce qui m'entourait",
+        "Je me suis senti frustré",
+        "J'ai trouvé cela fatigant",
+        "Je me suis senti irritable",
+        "Je me suis senti habile",
+        "Je me suis senti complètement absorbé",
+        "Je me suis senti satisfait",
+        "Je me suis senti défié",
+        "J'ai dû faire beaucoup d'efforts",
+        "Je me suis senti bien"
+      ],
+      "dimensions": {
+        "competence": {
+          "name": "Compétence",
+          "items": [1, 8]
+        },
+        "sensoryImmersion": {
+          "name": "Immersion sensorielle et imaginative",
+          "items": [0, 3]
+        },
+        "flow": {
+          "name": "Flow",
+          "items": [4, 9]
+        },
+        "tension": {
+          "name": "Tension",
+          "items": [5, 7]
+        },
+        "challenge": {
+          "name": "Challenge",
+          "items": [11, 12]
+        },
+        "negativeAffect": {
+          "name": "Affect négatif",
+          "items": [2, 6]
+        },
+        "positiveAffect": {
+          "name": "Affect positif",
+          "items": [10, 13]
+        }
+      }
+    },
+    "socialPresence": {
+      "name": "Social Presence",
+      "description": "Module Présence Sociale (17 items)",
+      "questions": [
+        "J'ai ressenti de l'empathie pour les autres",
+        "Mes actions dépendaient des actions des autres",
+        "Les actions des autres dépendaient de mes actions",
+        "Je me suis senti connecté aux autres",
+        "Les autres ont fait attention à moi",
+        "J'ai fait attention aux autres",
+        "J'ai ressenti de la jalousie envers les autres",
+        "J'ai trouvé agréable d'être avec les autres",
+        "Quand j'étais heureux, les autres étaient heureux",
+        "Quand les autres étaient heureux, j'étais heureux",
+        "J'ai influencé l'humeur des autres",
+        "J'ai été influencé par l'humeur des autres",
+        "J'ai admiré les autres",
+        "Ce que les autres faisaient affectait ce que je faisais",
+        "Ce que je faisais affectait ce que les autres faisaient",
+        "J'ai ressenti un désir de vengeance",
+        "J'ai ressenti de la schadenfreude (plaisir malveillant)"
+      ],
+      "dimensions": {
+        "psychologicalEmpathy": {
+          "name": "Implication psychologique - Empathie",
+          "items": [0, 3, 7, 8, 9, 12]
+        },
+        "psychologicalNegative": {
+          "name": "Implication psychologique - Sentiments négatifs",
+          "items": [6, 10, 11, 15, 16]
+        },
+        "behavioralInvolvement": {
+          "name": "Implication comportementale",
+          "items": [1, 2, 4, 5, 13, 14]
+        }
+      }
+    }
+  }
+}

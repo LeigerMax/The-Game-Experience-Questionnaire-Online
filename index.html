@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GEQ - Game Experience Questionnaire (Post-game Module)</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Game Experience Questionnaire</h1>
+            <h2>Module Post-Jeu</h2>
+            <p class="instructions">
+                Veuillez indiquer comment vous vous êtes senti après avoir terminé de jouer au jeu pour chacun des éléments suivants, 
+                en utilisant l'échelle suivante :
+            </p>
+            <div class="scale-legend">
+                <span><strong>0</strong> = Pas du tout d'accord</span>
+                <span><strong>1</strong> = Peu d'accord</span>
+                <span><strong>2</strong> = Neutre</span>
+                <span><strong>3</strong> = Plutôt d'accord</span>
+                <span><strong>4</strong> = Tout à fait d'accord</span>
+            </div>
+        </header>
+
+        <main>
+            <!-- Questionnaire -->
+            <form id="geq-form" class="questionnaire">
+                <!-- Les questions seront générées dynamiquement par JavaScript -->
+            </form>
+
+            <!-- Zone de scores - sera générée dynamiquement -->
+            <div class="scores-section">
+                <h3>Scores</h3>
+                <div class="scores-grid">
+                    <!-- Les cartes de score seront générées dynamiquement par JavaScript -->
+                </div>
+                
+                <div class="overall-progress">
+                    <h4 id="progress-title">Progression du questionnaire</h4>
+                    <div class="progress-bar">
+                        <div class="progress-fill" id="progress-fill"></div>
+                    </div>
+                    <div class="progress-text" id="progress-text">0 / 17 questions répondues</div>
+                </div>
+            </div>
+
+            <!-- Boutons d'action -->
+            <div class="actions">
+                <button type="button" id="about-btn" class="btn btn-info">
+                    ℹ️ À propos
+                </button>
+                <button type="button" id="reset-btn" class="btn btn-secondary">
+                    🔄 Réinitialiser le questionnaire
+                </button>
+                <button type="button" id="export-btn" class="btn btn-primary" disabled>
+                    📊 Exporter les résultats
+                </button>
+            </div>
+        </main>
+
+        <!-- Section À propos (masquée par défaut) -->
+        <section id="about-section" class="about-section" style="display: none;">
+            <div class="about-content">
+                <div class="about-header">
+                    <h1 id="about-title">À propos du Game Experience Questionnaire</h1>
+                    <button type="button" id="back-btn" class="btn btn-secondary">
+                        ← Retour au questionnaire
+                    </button>
+                </div>
+                
+                <div class="about-text">
+                    <div class="about-block">
+                        <p id="about-description">Description du GEQ...</p>
+                    </div>
+                    
+                    <div class="about-block">
+                        <p id="about-purpose">Objectif du questionnaire...</p>
+                    </div>
+                    
+                    <div class="about-block">
+                        <h3 id="modules-title">Les modules disponibles</h3>
+                        <div id="modules-content">
+                            <p id="module-postGame">Module Post-Jeu...</p>
+                            <p id="module-core">Module Principal...</p>
+                            <p id="module-inGame">Module En-Jeu...</p>
+                            <p id="module-socialPresence">Module Présence Sociale...</p>
+                        </div>
+                    </div>
+                    
+                    <div class="about-block">
+                        <h3 id="research-title">Utilité en recherche</h3>
+                        <p id="research-content">Utilisation du GEQ en recherche...</p>
+                    </div>
+                    
+                    <div class="about-block">
+                        <h3 id="source-title">Source officielle</h3>
+                        <p id="source-text">Texte sur la source...</p>
+                        <a href="https://pure.tue.nl/ws/files/21666907/Game_Experience_Questionnaire_English.pdf" 
+                           target="_blank" 
+                           id="source-link" 
+                           class="external-link">
+                            📄 Game Experience Questionnaire - Documentation officielle (PDF)
+                        </a>
+                    </div>
+                    
+                    <div class="about-block">
+                        <h3 id="implementation-title">Cette implémentation</h3>
+                        <p id="implementation-text">Texte sur cette implémentation...</p>
+                        <a href="https://github.com/LeigerMax/The-Game-Experience-Questionnaire-Online" 
+                           target="_blank" 
+                           id="implementation-link" 
+                           class="external-link">
+                            🔗 Voir le projet sur GitHub
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="locale-data.js"></script>
+    <script src="locale-manager.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
